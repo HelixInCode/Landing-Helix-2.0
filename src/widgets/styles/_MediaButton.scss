@@ -1,0 +1,28 @@
+.MediaButton{
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  left: 0;
+  color: #fff;
+  padding: 7px;
+  bottom: 0;
+  
+  &.instagram{
+    background-color: $instagram-color;
+  }
+  &.whatsapp{
+    background-color: $whatsapp-color;
+  }
+  &.facebook{
+    background-color: $facebook-color;
+  }
+  
+  &__icon{
+    fill: #fff;
+    width: 25px;
+  }
+  
+  @media screen and (min-width: 768px){
+    border-radius: 5px;
+    left: 20px;
+  }
+}

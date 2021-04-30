@@ -1,0 +1,43 @@
+.Navbar{
+  padding: 8px 16px;
+  padding-left: 16px + 20px;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  align-items: center;
+  gap: 25px;
+  background: linear-gradient(90deg, $PrimarioAzulOscuro 0%, $PrimarioAzul 100%);
+  color: $primary-font-color;
+  
+  @media screen and (min-width: 768px){
+    gap: 75px;
+  }
+  @media screen and (min-width: 992px){
+    padding-left: 16px + 50px;
+    gap: 200px;
+  }
+  
+  &__brand-icon{
+    &--image{
+      height: 40px;
+    }
+  }
+  
+  &__links{
+    display: grid;
+    grid-template-columns: repeat(6, auto);
+    justify-content: start;
+    gap: 20px;
+    
+    &--item{
+      font-weight: 700;
+      cursor: pointer;
+      
+      span{
+        display: none;
+        @media screen and (min-width: 768px){
+          display: inline;
+        }
+      }
+    }
+  }
+}

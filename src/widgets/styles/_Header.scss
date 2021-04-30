@@ -1,0 +1,51 @@
+.navbar > .navbar-collapse > #main-items > .nav-item > .nav-link{
+  padding-left: 0;
+  padding-right: 0;
+  padding-left: 7px;
+  padding-right: 7px;
+  padding-top: 0;
+  padding-bottom: 0;
+  height: 40px;
+  color: #fff;
+  font-weight: bold;
+  transition: .3s;
+  display: flex;
+  align-items: center;
+
+  @media screen and (min-width: 375px){
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+.navbar > .navbar-collapse > #main-items > .nav-item > .nav-link > span{
+  display: none;
+
+  @media screen and (min-width: 870px){
+    display: inline-block;
+  }
+}
+.navbar > .navbar-collapse > #main-items > .nav-item > .nav-link:hover{
+  transform: translateY(7px);
+}
+
+.navbar > .navbar-collapse > a{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  font-size: 25px;
+  left: 0;
+  color: #fff;
+  padding: 7px;
+}
+
+.navbar > .navbar-collapse > a:hover{
+  color: #fff;
+  padding: 7px 20px;
+
+  @media screen and (min-width: 768px){
+    padding: 7px 30px;
+  }
+}
