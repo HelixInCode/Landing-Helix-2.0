@@ -1,0 +1,66 @@
+.Hero{
+  height: 100vh;
+  max-height: 768px;
+  background-image: url('../assets/img/portada.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  
+  display: grid;
+  grid-template-columns: minmax(auto, .9fr);
+  justify-content: center;
+  align-content: center;
+  
+  @media screen and (min-width: 480px){
+    grid-template-columns: minmax(auto, .7fr);
+  }
+  @media screen and (min-width: 768px){
+    grid-template-columns: minmax(auto, .5fr);
+  }
+  
+  &__container{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 100px;
+    
+    @media screen and (min-width: 480px){
+      gap: 80px;
+      grid-template-rows: unset;
+      transform: translateY(55px);
+    }
+  }
+  
+  &-title{
+    display: grid;
+    grid-template-columns: 1fr;
+    
+    &__main{
+      font-weight: 700;
+      font-size: 4.5rem;
+
+      @media screen and (min-width: 576px){
+        font-size: 6rem;
+      }
+    }
+
+    &__secondary{
+      font-weight: 500;
+      font-size: 3rem;
+    }
+  }
+  
+  &-buttons{
+    padding-top: 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 10px;
+    
+    a:nth-child(1){
+      justify-self: end;
+    }
+    a:nth-child(2){
+      justify-self: start;
+    }
+  }
+}

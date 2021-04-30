@@ -5,7 +5,6 @@ const Home = () => {
   return (
     <main>
       <Header/>
-      <h2>Epa chamo</h2>
     </main>
   )
 }
