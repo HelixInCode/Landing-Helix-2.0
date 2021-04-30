@@ -1,10 +1,16 @@
 $buttons-space: 40px;
 
 .SocialMedias{
+  z-index: 1;
   position: fixed;
   left: 0;
-  bottom: 0;
-  padding: 20px;
+  bottom: 60px;
+  padding: 10px;
   display: grid;
   gap: 10px;
+  
+  @media screen and (min-width: 480px){
+    padding: 20px;
+    bottom: 0;
+  }
 }

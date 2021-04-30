@@ -1,6 +1,9 @@
 @import './lib/variables';
 @import './lib/reset';
 
+//Components Styles
+@import '../components/styles/Hero';
+
 //Widgets Styles
 @import '../widgets/styles/Header';
 @import '../widgets/styles/Navbar';

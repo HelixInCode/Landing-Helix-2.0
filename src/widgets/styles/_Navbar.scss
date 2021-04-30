@@ -1,6 +1,10 @@
 .Navbar{
+  z-index: 9;
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
   padding: 8px 16px;
-  padding-left: 16px + 20px;
   display: grid;
   grid-template-columns: auto 1fr;
   align-items: center;
@@ -8,6 +12,11 @@
   background: linear-gradient(90deg, $PrimarioAzulOscuro 0%, $PrimarioAzul 100%);
   color: $primary-font-color;
   
+  @media screen and (min-width: 480px){
+    top: 0;
+    bottom: unset;
+    padding-left: 16px + 20px;
+  }
   @media screen and (min-width: 768px){
     gap: 75px;
   }

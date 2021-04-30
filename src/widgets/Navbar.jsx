@@ -1,5 +1,4 @@
 import React from 'react'
-import SocialMedias from './SocialMedias'
 import brandImage from '../assets/img/Helix-blanco.svg'
 
 const Navbar = () => {
@@ -42,8 +41,6 @@ const Navbar = () => {
           </a>
         </li>
       </ul>
-      
-      <SocialMedias/>
     </nav>
   )
 }
