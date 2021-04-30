@@ -1,0 +1,103 @@
+.Footer{
+  margin-bottom: 42px;
+  background: #0e0e0e;
+  display: grid;
+  grid-template: 1fr / auto;
+  font-family: $primary-family;
+  // font-family: 'Oswald', sans-serif;
+
+  @media screen and (min-width: 375px){
+    margin-bottom: 50px;
+  }
+  @media screen and (min-width: 480px){
+    margin-bottom: 0;
+  }
+}
+.Footer > .contenedor-medio{
+  color: #fff;
+  display: grid;
+  grid-template-columns: 1fr;
+  background-color: #131313;
+  justify-content: center;
+
+  @media screen and (min-width: 768px){
+    grid-template-columns: repeat(3, auto);
+  }
+}
+.Footer > .contenedor-medio > #logo-footer,
+.Footer > .contenedor-medio > #servicios-footer,
+.Footer > .contenedor-medio > #contacto-footer{
+  padding: 0 20px;
+  
+  @media screen and (min-width: 992px){
+    padding: 0 40px;
+  }
+}
+.Footer > .contenedor-medio h4{
+  border-bottom: 2px solid $PrimarioAzul;
+  padding: 10px;
+}
+.Footer > .contenedor-medio li{
+  
+  font-size: 16px; 
+  
+  @media screen and (min-width: 992px){
+    font-size: 18px;
+  }
+}
+.Footer > .contenedor-medio > #logo-footer{
+  align-self: center;
+}
+.Footer > .contenedor-medio > #logo-footer > a{
+  margin: 0;
+  margin: 10px;
+}
+.Footer > .contenedor-medio > #logo-footer > a > img{
+  width: 100%;
+  max-width: 246px;
+}
+.Footer > .contenedor-medio > #servicios-footer > ul{
+  padding-left: 0;
+  display: grid;
+  grid-template-columns: 1fr;
+  text-align: center;
+  
+  @media screen and (min-width: 768px){
+    grid-template-columns: repeat(2, 1fr);
+    text-align: start;
+  }
+}
+.Footer > .contenedor-medio > #servicios-footer > ul > li{
+  list-style: none;
+  /* justify-self: center; */
+  padding: 5px 10px;
+}
+.Footer > .contenedor-medio > #servicios-footer > ul > li:nth-of-type(1){
+  grid-column: 1 / 2;
+}
+.Footer > .contenedor-medio > #contacto-footer > ul{
+  padding-left: 0;
+  text-align: center;
+  display: grid;
+  grid-template-columns: 1fr;
+
+  @media screen and (min-width: 768px){
+    text-align: start;
+  }
+}
+.Footer > .contenedor-medio > #contacto-footer > ul > li{
+  list-style: none;
+  padding: 5px 10px;
+}
+.Footer > .contenedor-medio > #contacto-footer h4{
+  @media screen and (min-width: 768px){
+    padding: 10px;
+  }
+}
+.Footer > .copyright{
+  color: #fff;
+  padding: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
