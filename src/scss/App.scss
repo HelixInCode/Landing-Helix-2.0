@@ -1,8 +1,14 @@
 @import './lib/variables';
 @import './lib/reset';
+@import './lib/mixins';
+
+//Pages Styles
+@import '../pages/styles/Home';
 
 //Components Styles
 @import '../components/styles/Hero';
+@import '../components/styles/Services';
+@import '../components/styles/ServiceItem';
 
 //Widgets Styles
 @import '../widgets/styles/Header';

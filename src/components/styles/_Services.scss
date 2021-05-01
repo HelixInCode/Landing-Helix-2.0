@@ -1,0 +1,44 @@
+.Services{
+  padding: 40px 10px;
+  
+  @media screen and (min-width: 480px){
+    padding: 40px 20px;
+  }
+  @media screen and (min-width: 768px){
+    grid-template-columns: repeat(auto-fill, minmax(250px, 300px));
+    padding: 40px 30px;
+  }
+  @media screen and (min-width: 992px){
+    padding: 40px;
+  }
+  
+  &__title{
+    padding-bottom: 10px;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    gap: 10px;
+    
+    h2{
+      color: $PrimarioAzulClaro;
+      font-size: 3.2rem;
+    }
+  }
+  &__list{
+    padding: 40px 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 500px));
+    place-content: center;
+    gap: 10px;
+    
+    @media screen and (min-width: 680px){
+      grid-template-columns: repeat(auto-fill, minmax(250px, 300px));
+    }
+    @media screen and (min-width: 992px){
+      grid-template-columns: repeat(auto-fill, minmax(250px, 400px));
+    }
+  }
+}

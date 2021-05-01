@@ -1,6 +1,6 @@
 .Footer{
   margin-bottom: 42px;
-  background: #0e0e0e;
+  background-color: $primary-dark-color;
   display: grid;
   grid-template: 1fr / auto;
   font-family: $primary-family;
@@ -15,7 +15,7 @@
     color: #fff;
     display: grid;
     grid-template-columns: 1fr;
-    background-color: #131313;
+    background-color: $secondary-dark-color;
     justify-content: center;
     padding: 15px 0;
   
