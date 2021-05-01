@@ -1,10 +1,11 @@
-import React from 'react'
-import MediaButton from '../widgets/MediaButton'
+import React from 'react';
+import MediaButton from '../widgets/MediaButton';
+import Instagram from './icons/Instagram';
 
 const InstagramButton = ({link}) => {
   return (
     <MediaButton type="instagram" link={link}>
-      instagram
+      <Instagram className="MediaButton__icon"/>
     </MediaButton>
   )
 }

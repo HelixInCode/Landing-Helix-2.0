@@ -1,13 +1,13 @@
 import React from 'react'
+import {Link} from 'react-router-dom'
 import brandImage from '../assets/img/Helix-blanco.svg'
 
 const Navbar = () => {
   return (
     <nav className="Navbar">
-
-      <a className="Navbar__brand-icon" href="index">
+      <Link to="/" className="Navbar__brand-icon">
         <img className="Navbar__brand-icon--image" src={brandImage} alt="Logo Helix Intelligence Code"/>
-      </a>
+      </Link>
 
       <ul className="Navbar__links">
         <li className="Navbar__links--item">
