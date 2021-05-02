@@ -1,0 +1,25 @@
+.NavbarItem{
+  font-weight: 700;
+  cursor: pointer;
+  display: flex;
+  
+  &__link{
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: center;
+    gap: 5px;
+    
+    &--icon{
+      height: 16px;
+      display: flex;
+      fill: #fff;
+      // transform: translateY(2px);
+    }
+    &--inner{
+      display: none;
+      @media screen and (min-width: 992px){
+        display: flex;
+      }
+    }
+  }
+}

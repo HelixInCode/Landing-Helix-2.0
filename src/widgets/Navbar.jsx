@@ -1,44 +1,49 @@
 import React from 'react';
 import {Link} from 'react-router-dom'
+import Briefcase from '../components/icons/Briefcase';
+import Envelope from '../components/icons/Envelope';
+import EnvelopeOpen from '../components/icons/EnvelopeOpen';
+import Handshake from '../components/icons/Handshake';
+import Home from '../components/icons/Home';
+import IdCard from '../components/icons/IdCard';
+import NavbarItem from './NavbarItem';
 
 const Navbar = () => {
   return (
     <nav className="Navbar">
       <Link to="/" className="Navbar__brand-icon">
-        <img className="Navbar__brand-icon--image" src="https://i.imgur.com/NP5G2lV.png" alt="Logo Helix Intelligence Code"/>
+        <img 
+          className="Navbar__brand-icon--image" 
+          src="https://i.imgur.com/NP5G2lV.png" 
+          alt="Helix-Intelligence-Code-Logo"
+        />
       </Link>
 
       <ul className="Navbar__links">
-        <li className="Navbar__links--item">
-          <a href="#inicio">
-            <span>Inicio</span>
-          </a>
-        </li>
-        <li className="Navbar__links--item">
-          <a href="#servicios">
-            <span>Servicios</span>
-          </a>
-        </li>
-        <li className="Navbar__links--item">
-          <a href="#nosotros">
-            <span>Quiénes Somos</span>
-          </a>
-        </li>
-        <li className="Navbar__links--item">
-          <a href="#portafolio">
-            <span>Portafolio</span>
-          </a>
-        </li>
-        <li className="Navbar__links--item">
-          <a href="#planes">
-            <span>Planes</span>
-          </a>
-        </li>
-        <li className="Navbar__links--item">
-          <a href="#contacto">
-            <span>Contacto</span>
-          </a>
-        </li>
+        <NavbarItem
+          inner="Inicio" 
+          Icon={Home}
+        />
+        <NavbarItem
+          inner="Servicios" 
+          Icon={Handshake}
+        />
+        <NavbarItem
+          inner="Quiénes Somos" 
+          Icon={IdCard}
+        />
+        <NavbarItem
+          inner="Portafolio" 
+          Icon={EnvelopeOpen}
+        />
+        <NavbarItem
+          inner="Planes" 
+          Icon={Briefcase}
+        />
+        <NavbarItem
+          inner="Contacto" 
+          Icon={Envelope}
+        />
       </ul>
     </nav>
   )

@@ -8,10 +8,13 @@
   display: grid;
   grid-template-columns: auto 1fr;
   align-items: center;
-  gap: 25px;
+  gap: 10px;
   background: linear-gradient(90deg, $PrimarioAzulOscuro 0%, $PrimarioAzul 100%);
   color: $primary-font-color;
   
+  @media screen and (min-width: 425px){
+    gap: 25px;
+  }
   @media screen and (min-width: 480px){
     top: 0;
     bottom: unset;
@@ -22,10 +25,9 @@
   }
   @media screen and (min-width: 992px){
     padding-left: 16px + 50px;
-    gap: 150px;
   }
   @media screen and (min-width: 1024px){
-    gap: 200px;
+    gap: 180px;
   }
   
   &__brand-icon{
@@ -39,17 +41,5 @@
     grid-template-columns: repeat(6, auto);
     justify-content: start;
     gap: 20px;
-    
-    &--item{
-      font-weight: 700;
-      cursor: pointer;
-      
-      span{
-        display: none;
-        @media screen and (min-width: 768px){
-          display: inline;
-        }
-      }
-    }
   }
 }
