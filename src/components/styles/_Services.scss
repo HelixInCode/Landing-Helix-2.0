@@ -1,11 +1,13 @@
 .Services{
   padding: 40px 10px;
+  display: grid;
+  grid-template-columns: minmax(auto, 2200px);
+  justify-content: center;
   
   @media screen and (min-width: 480px){
     padding: 40px 20px;
   }
   @media screen and (min-width: 768px){
-    grid-template-columns: repeat(auto-fill, minmax(250px, 300px));
     padding: 40px 30px;
   }
   @media screen and (min-width: 992px){
@@ -18,7 +20,7 @@
     text-transform: uppercase;
     text-align: center;
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: minmax(auto, 2200px);
     justify-items: center;
     gap: 10px;
     

@@ -1,6 +1,5 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
-import brandImage from '../assets/img/Helix-blanco.svg';
 
 const Footer = () => {
   return (
@@ -9,7 +8,7 @@ const Footer = () => {
       <nav className="Footer__nav">
         
         <Link to="/" className="Footer__nav--brand-image">
-          <img src={brandImage} alt="Logo Helix Intelligence Code"/>
+          <img src="https://i.imgur.com/NP5G2lV.png" alt="Logo Helix Intelligence Code"/>
         </Link>
         
         <div className="Footer-section">
@@ -57,7 +56,7 @@ const Footer = () => {
       </nav>
 
       <div className="Footer__copyright">
-        <span>© 2021 Copyright: <a href="index">helixincode.com</a></span>
+        <span>© 2021 Copyright: <Link to="/">helixincode.com</Link></span>
       </div>
     </div>
   )
