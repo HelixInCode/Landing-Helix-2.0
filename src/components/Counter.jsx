@@ -10,26 +10,11 @@ const Counter = () => {
   return (
     <section className="Counter">
       <div className="Counter__container">
-        
-        <CounterItem name="Líneas de Código" amount={0}>
-          <Code className="CounterItem__icon"/>
-        </CounterItem>
-        
-        <CounterItem name="Proyectos Terminados" amount={0}>
-          <SuccesIcon className="CounterItem__icon"/>
-        </CounterItem>
-        
-        <CounterItem name="Horas de Trabajo" amount={0}>
-          <Clock className="CounterItem__icon"/>
-        </CounterItem>
-        
-        <CounterItem name="Mates" amount={0}>
-          <Mate className="CounterItem__icon"/>
-        </CounterItem>
-        
-        <CounterItem name="Arepas" amount={0}>
-          <Arepa className="CounterItem__icon"/>
-        </CounterItem>
+        <CounterItem Icon={Code} name="Líneas de Código" amount={5580}/>
+        <CounterItem Icon={SuccesIcon} name="Proyectos Terminados" amount={85}/>
+        <CounterItem Icon={Clock} name="Horas de Trabajo" amount={3840}/>
+        <CounterItem Icon={Mate} name="Mates" amount={3500}/>
+        <CounterItem Icon={Arepa} name="Arepas" amount={800}/>
       </div>
       <div className="Counter__overlay"></div>
     </section>
