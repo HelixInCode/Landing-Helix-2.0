@@ -1,42 +1,37 @@
-import React from 'react'
+import React from 'react';
+import CounterItem from './CounterItem';
+import Code from './icons/Code';
+import SuccesIcon from './icons/SuccessIcon';
+import Clock from './icons/Clock';
+import Mate from './icons/Mate';
+import Arepa from './icons/Arepa';
 
 const Counter = () => {
   return (
     <section className="Counter">
       <div className="Counter__container">
-        <div className="CounterItem">
-          <i className="fas fa-code fa-3x"></i>
-          <span className="CounterItem__amount" data-cantidad-total="5580">0</span>
-          <span className="CounterItem__name">Líneas de Código</span>
-        </div>
         
-        <div className="CounterItem">
-          <i className="fas fa-check-circle fa-3x"></i>
-          <span className="CounterItem__amount" data-cantidad-total="85">0</span>
-          <span className="CounterItem__name">Proyectos Terminados</span>
-        </div>
+        <CounterItem name="Líneas de Código" amount={0}>
+          <Code className="CounterItem__icon"/>
+        </CounterItem>
         
-        <div className="CounterItem">
-          <i className="far fa-clock fa-3x"></i>
-          <span className="CounterItem__amount" data-cantidad-total="3840">0</span>
-          <span className="CounterItem__name">Horas de Trabajo</span>
-        </div>
+        <CounterItem name="Proyectos Terminados" amount={0}>
+          <SuccesIcon className="CounterItem__icon"/>
+        </CounterItem>
         
-        <div className="CounterItem">
-          <img src="src/assets/img/mate.svg" alt="mate helix"/>
-          <span className="CounterItem__amount" data-cantidad-total="3500">0</span>
-          <span className="CounterItem__name">Mates</span>
-        </div>
+        <CounterItem name="Horas de Trabajo" amount={0}>
+          <Clock className="CounterItem__icon"/>
+        </CounterItem>
         
-        <div className="CounterItem">
-          <img src="src/assets/img/arepa.svg" alt="arepa helix"/>
-          <span className="CounterItem__amount" data-cantidad-total="800">0</span>
-          <span className="CounterItem__name">Arepas</span>
-        </div>
+        <CounterItem name="Mates" amount={0}>
+          <Mate className="CounterItem__icon"/>
+        </CounterItem>
+        
+        <CounterItem name="Arepas" amount={0}>
+          <Arepa className="CounterItem__icon"/>
+        </CounterItem>
       </div>
-      <div className="Counter__overlay">
-
-      </div>
+      <div className="Counter__overlay"></div>
     </section>
   )
 }

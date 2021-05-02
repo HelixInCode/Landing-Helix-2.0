@@ -1,11 +1,11 @@
 import React from 'react'
 
-const CounterItem = () => {
+const CounterItem = ({name, amount, children}) => {
   return (
     <div className="CounterItem">
-      <img className="CounterItem__icon" src="src/assets/img/arepa.svg" alt="arepa helix"/>
-      <span className="CounterItem__amount" data-cantidad-total="800">0</span>
-      <span className="CounterItem__name">Arepas</span>
+      {children}
+      <span className="CounterItem__amount" data-cantidad-total="800">{amount}</span>
+      <span className="CounterItem__name">{name}</span>
     </div>
   )
 }

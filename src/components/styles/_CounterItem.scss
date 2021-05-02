@@ -1,39 +1,18 @@
 .CounterItem{
   /* border: 1px solid #fff; */
-  color: #fff;
+  color: $primary-font-color;
+  max-width: $CounterItemWidth;
   display: grid;
   grid-template-columns: 1fr;
-  text-align: center;
-
-  @media screen and (min-width: 625px){
-    grid-column: 2 span;
+  justify-items: center;
+  &__icon{
+    height: 48px;
+    fill: #fff;
   }
-}
-.CounterItem:nth-of-type(4){
-  @media screen and (min-width: 625px){
-    grid-column: 2 / 4;
-  }
-}
-.CounterItem:nth-of-type(5){
-  @media screen and (min-width: 625px){
-    grid-column: 4 / 6;
-  }
-}
-
-.CounterItem > .CounterItem__icon{
-  height: 48px;
-  margin: 0 auto;
-}
-.CounterItem > .CounterItem__amount
-.CounterItem > .CounterItem__name{
-  font-weight: bold;
-  font-size: larger;
-}
-
-@media screen and (min-width: 992px){
-  .CounterItem,
-  .CounterItem:nth-of-type(4),
-  .CounterItem:nth-of-type(5){
-    grid-column: 1 span;
+  
+  &__amount,
+  &__name{
+    font-weight: 700;
+    font-size: 1.92rem;
   }
 }
