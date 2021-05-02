@@ -1,5 +1,4 @@
 import React from 'react';
-import laptopImage from '../assets/img/Laptop.jpg'
 
 const Us = () => {
   return (
