@@ -1,4 +1,5 @@
 import React from 'react'
+import Counter from '../components/Counter'
 import Services from '../components/Services'
 import Us from '../components/Us'
 import Footer from '../widgets/Footer'
@@ -10,6 +11,7 @@ const Home = () => {
       <Header/>
       <Services/>
       <Us/>
+      <Counter/>
       <Footer/>
     </main>
   )
