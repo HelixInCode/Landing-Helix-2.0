@@ -15,19 +15,19 @@ const Footer = () => {
           <h4 className="Footer-section__title">Servicios</h4>
           <ul className="Footer-section__list">
             <li className="Footer-section__list--item">
-              <a href="#Landing">Diseño Web</a>
+              <a href="/#servicios">Diseño Web</a>
             </li>
             <li className="Footer-section__list--item">
-              <a href="#Ecommerce">E-Commerce</a>
+              <a href="/#servicios">E-Commerce</a>
             </li>
             <li className="Footer-section__list--item">
-              <a href="#Marketing">Marketing Digital</a>
+              <a href="/#servicios">Marketing Digital</a>
             </li>
             <li className="Footer-section__list--item">
-              <a href="#Analitica">Analitica Web</a>
+              <a href="/#servicios">Analitica Web</a>
             </li>
             <li className="Footer-section__list--item">
-              <a href="#Community">Community Manager</a>
+              <a href="/#servicios">Community Manager</a>
             </li>
           </ul>
             

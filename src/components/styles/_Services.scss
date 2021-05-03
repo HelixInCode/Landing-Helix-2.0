@@ -15,19 +15,7 @@
   }
   
   &__title{
-    padding-bottom: 10px;
-    font-weight: 700;
-    text-transform: uppercase;
-    text-align: center;
-    display: grid;
-    grid-template-columns: minmax(auto, 2200px);
-    justify-items: center;
-    gap: 10px;
-    
-    h2{
-      color: $PrimarioAzulClaro;
-      font-size: 3.2rem;
-    }
+    @include sectionTitle($PrimarioAzulClaro);
   }
   &__list{
     padding: 40px 0;

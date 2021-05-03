@@ -1,5 +1,6 @@
 import React, {useState} from 'react';
 import initialState from '../initialState'
+import Title from '../widgets/Title';
 import ServiceItem from './ServiceItem';
 
 const Services = () => {
@@ -7,10 +8,10 @@ const Services = () => {
   return (
     <section id="servicios" className="Services">
 
-      <div className="Services__title">
-        <h2>Servicios</h2>
-        <hr style={{backgroundColor: "#fff", width: "100px", height: "1px"}}/>
-      </div>
+      <Title  
+        inner="Servicios"
+        className="Services__title"
+      />
 
       <div className="Services__list">
           
