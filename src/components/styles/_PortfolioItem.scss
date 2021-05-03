@@ -1,0 +1,50 @@
+$itemHeight: 170px; 
+
+.PortfolioItem{
+  z-index: 1;
+  cursor: pointer;
+  position: relative;
+  min-height: $itemHeight;
+  background-color: $sombra;
+  
+  &__cover{
+    transition: .3s;
+    z-index: 2;
+    max-height: $itemHeight;
+    @include imageCover;
+  }  
+  &__container{
+    transition: .3s;
+    z-index: 1;
+    background-color: $SecundarioAzul;
+    max-height: $itemHeight;
+    text-align: center;
+    @include strech;
+    
+    display: grid;
+    grid-template-rows: 1fr auto;
+    justify-items: center;
+    align-items: center;
+    overflow: auto;
+    
+    @include customScrollBar;
+    
+    &--description{
+      padding: 10px;
+    }
+    &--link{
+      @include secondaryButton;
+    }
+  }  
+  
+  //Cuando está abierto se le sube el z-index al item
+  &.open{
+    z-index: 3;
+  }  
+  &.open &__cover{
+    transform: translateY(-50%);
+  }  
+  &.open &__container{
+    transform: translateY(50%);
+  }  
+}

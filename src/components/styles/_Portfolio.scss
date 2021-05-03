@@ -1,0 +1,26 @@
+.Portfolio{
+  padding: 48px;
+  z-index: 3;
+  position: relative; 
+  background-color: $PrimarioAzulOscuro;
+  display: grid;
+  grid-template-columns: minmax(300px, 1400px);
+  justify-content: center;
+  /* padding-bottom: 60px; */
+  
+  &__title{
+    @include sectionTitle;
+    padding-bottom: 40px;
+  }
+  
+  .portafolio-container{
+    display: grid; 
+    grid-template-columns: minmax(100px, 600px);
+    grid-template-rows: auto;
+    justify-content: center;
+  
+    @media screen and (min-width: 768px){
+      grid-template-columns: repeat(3, minmax(100px, 466.66px));
+    }
+  }
+}

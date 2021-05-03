@@ -31,6 +31,57 @@ export default {
       description: 'Analizamos la cantidad y calidad de visitas que posee tu web, así como el público potencial en ella; para aumentar la visualizacion en la misma'
     },
   ],
+  portfolio:[
+    {
+      id: "1",
+      name:'',
+      cover: 'https://i.imgur.com/GskJTx2.jpg',
+      link: 'https://orlandomendoza17.github.io/CIT/',
+      description: 'Sitio Web realizado para "Centro de Innovación Tecnológica", con integración de redes sociales, catalogo, contacto y diseño personalizado',
+    },
+    {
+      id: "2",
+      name:'',
+      cover: 'https://i.imgur.com/xcsrhWq.jpg',
+      link: 'https://www.washchile.cl',
+      description: 'Landing Page, realizado para Rubén Faría y Desiree Rea, empresa "wash", con integración redes sociales, diseño personalizado',
+    },
+    {
+      id: "3",
+      name:'',
+      cover: 'https://i.imgur.com/sgplaEK.jpg',
+      link: 'http://cit-unitec.000webhostapp.com/index.html',
+      description: 'Sitio Web realizado para Oliver Acosta, empresa "SMC de Venezuela", redes sociales, bases de datos interna, medios de contacto y diseño personalizado',
+    },
+    {
+      id: "4",
+      name:'',
+      cover: 'https://i.imgur.com/xcsrhWq.jpg',
+      link: 'http://cakemascake.com/',
+      description: 'Sitio Web realizado para Cake+Cake,  redes sociales, bases de datos interna, medios de contacto y diseño personalizado.',
+    },
+    {
+      id: "5",
+      name:'',
+      cover: 'https://i.imgur.com/sgplaEK.jpg',
+      link: 'http://logikaas.com.ar/',
+      description: 'Página Institucional hecha a Logika Automation Solutions, con redes y contacto.',
+    },
+    {
+      id: "6",
+      name:'',
+      cover: 'https://i.imgur.com/2hzytvM.jpg',
+      link: 'https://conocimiento-global.com/',
+      description: 'Página Educativa realizada para Conocimiento Global, con la finalidad de vender Cursos Online. Con integración de redes y Contacto.',
+    },
+    {
+      id: "7",
+      name:'',
+      cover: 'https://i.imgur.com/sgplaEK.jpg',
+      link: 'https://helixincode.github.io/Psicokrecer/',
+      description: 'Blog realizado para Psicokrecer, un equipo de psicólogas cuya finalidad es dar apoyo y ofrecer servicios principalmente a mujeres emprendedoras.',
+    },
+  ],
   plans:[
     {
       id: "1",
