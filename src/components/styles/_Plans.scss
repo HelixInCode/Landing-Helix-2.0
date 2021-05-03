@@ -1,7 +1,7 @@
 .Plans{
   position: relative;
   padding: 48px;
-  @include backgroundFixed('../../src/assets/img/background-code.jpg');
+  @include backgroundFixed('https://i.imgur.com/x4wy6Es.jpg');
   display: grid;
   grid-template-columns: minmax(300px, 810px);
   justify-content: center;
@@ -22,13 +22,13 @@
     z-index: 2;
     position: relative; 
     display: grid;
-    grid-template-columns: minmax(100px, 300px);
+    grid-template-columns: minmax(100px, 250px);
     justify-content: center;
     grid-gap: 10px;
     grid-row-gap: 10px;
   
     @media screen and (min-width: 425px){
-      grid-template-columns: minmax(100px, 350px);
+      grid-template-columns: minmax(100px, 250px);
     }
     @media screen and (min-width: 655px){
       grid-template-columns: repeat(3, minmax(100px, 250px));

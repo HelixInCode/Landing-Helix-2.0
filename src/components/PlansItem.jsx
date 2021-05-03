@@ -1,26 +1,19 @@
 import React from 'react';
 import Button from '../widgets/Button';
 
-const PlansItem = () => {
+const PlansItem = ({title, features}) => {
   return (
     <div className="PlansItem">
-      <h5 className="PlansItem__title">Plan Básico</h5>
+      <h5 className="PlansItem__title">{title}</h5>
       <ul className="PlansItem__list">
-        <li className="PlansItem__list--feature">
-          Landing Page
-        </li>
-        <li className="PlansItem__list--feature">
-          Optimización Web
-        </li>
-        <li className="PlansItem__list--feature">
-          Redes Sociales
-        </li>
-        <li className="PlansItem__list--feature">
-          Soporte
-        </li>
+        {features.map(feature =>(
+          <li className="PlansItem__list--feature">
+            {feature}
+          </li>
+        ))}
       </ul>
       <a href="/#contacto" className="PlansItem__Button">
-        <Button>Lo Quiero!</Button>
+        <Button>Más info!</Button>
       </a>
     </div>
   )

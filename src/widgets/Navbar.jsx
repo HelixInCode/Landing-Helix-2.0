@@ -29,7 +29,7 @@ const Navbar = () => {
           Icon={Handshake}
         />
         <NavbarItem
-          inner="Quiénes Somos" 
+          inner="Nosotros" 
           Icon={IdCard}
         />
         <NavbarItem

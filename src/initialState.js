@@ -30,5 +30,37 @@ export default {
       image: 'https://i.imgur.com/2hzytvM.jpg',
       description: 'Analizamos la cantidad y calidad de visitas que posee tu web, así como el público potencial en ella; para aumentar la visualizacion en la misma'
     },
+  ],
+  plans:[
+    {
+      id: "1",
+      title: 'Plan Básico',
+      features:[
+        'Landing Page',
+        'Optimización Web',
+        'Redes Sociales',
+        'Soporte',
+      ]
+    },
+    {
+      id: "2",
+      title: 'Plan Negocio',
+      features:[
+        'E-commerce',
+        'Optimización Web',
+        'Redes Sociales',
+        'Soporte',
+      ]
+    },
+    {
+      id: "3",
+      title: 'Plan Gerente',
+      features:[
+        'Publicidad',
+        'Posicionamiento',
+        'Redes Sociales',
+        'Soporte',
+      ]
+    },
   ]
 }

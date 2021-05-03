@@ -1,8 +1,11 @@
-import React from 'react'
-import Title from '../widgets/Title'
-import PlansItem from './PlansItem'
+import React, {useState} from 'react';
+import Title from '../widgets/Title';
+import PlansItem from './PlansItem';
+import initialState from '../initialState';
 
 const Plans = () => {
+  const [plans] = useState(initialState.plans)
+  console.log(plans)
   return (
     <section id="planes" className="Plans">
       <Title 
@@ -10,9 +13,9 @@ const Plans = () => {
         className="Plans__title"
       />
       <div className="Plans__container">
-        <PlansItem/>
-        <PlansItem/>
-        <PlansItem/>
+        {plans.map(item =>(
+          <PlansItem {...item} key={item.id}/>
+        ))}
       </div>
       <div className="Plans__overlay"></div>
     </section>
