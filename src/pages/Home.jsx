@@ -1,7 +1,6 @@
 import React from 'react';
 import Contact from '../components/Contact';
 import Counter from '../components/Counter'
-import ParticlesBackground from '../components/ParticlesBackground';
 import Plans from '../components/Plans';
 import Portfolio from '../components/Portfolio';
 import Services from '../components/Services';
@@ -19,7 +18,6 @@ const Home = () => {
       <Plans/>
       <Counter/>
       <Contact/>
-      <ParticlesBackground/>
       <Footer/>
     </main>
   )
