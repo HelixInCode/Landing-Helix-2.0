@@ -35,7 +35,7 @@ export default {
     {
       id: "1",
       name:'',
-      cover: 'https://i.imgur.com/GskJTx2.jpg',
+      cover: 'https://i.imgur.com/SDzMl8g.png',
       link: 'https://orlandomendoza17.github.io/CIT/',
       description: 'Sitio Web realizado para "Centro de Innovación Tecnológica", con integración de redes sociales, catalogo, contacto y diseño personalizado',
     },

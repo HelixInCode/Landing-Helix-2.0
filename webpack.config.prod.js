@@ -69,7 +69,7 @@ module.exports = {
       filename: 'css/[name].[contenthash].css'
     }),
     new HtmlWebpackPlugin({
-      // favicon: ''
+      favicon: './src/assets/icon/helice-icon.svg',
       inject: 'body',
       title: 'Platzi-Conf-Merch',
       template: path.resolve(__dirname, './public/index.html'),

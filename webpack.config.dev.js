@@ -60,7 +60,7 @@ module.exports = {
   },
   plugins:[
     new HtmlWebpackPlugin({
-      // favicon: ''
+      favicon: './src/assets/icon/helice.svg',
       inject: 'body',
       title: 'Platzi-Conf-Merch',
       template: path.resolve(__dirname, './public/index.html'),
