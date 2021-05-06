@@ -6,8 +6,8 @@ const PlansItem = ({title, features}) => {
     <div className="PlansItem">
       <h5 className="PlansItem__title">{title}</h5>
       <ul className="PlansItem__list">
-        {features.map(feature =>(
-          <li className="PlansItem__list--feature">
+        {features.map((feature, index) =>(
+          <li key={index} className="PlansItem__list--feature">
             {feature}
           </li>
         ))}

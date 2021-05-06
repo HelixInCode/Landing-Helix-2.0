@@ -7,14 +7,12 @@ const Hero = () => {
   const titleTyped = useRef(null)
   
   useEffect(() => {
-    console.log(titleTyped.current)    
     var typed = new Typed(titleTyped.current, options);
   }, [])
   
   return (
     <section id="inicio" className="Hero">
       <div className="Hero__container">
-        
         <h1 className="Hero-title">
           <span className="Hero-title__main">
             <span ref={titleTyped}></span> 

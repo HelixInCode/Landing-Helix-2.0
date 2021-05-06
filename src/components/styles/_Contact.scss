@@ -1,0 +1,46 @@
+.Contact{
+  padding: 48px 10px;
+  background-color: $grey-color;
+  display: grid;
+  justify-content: center;
+  grid-template-columns: minmax(200px, 992px);
+  gap: 20px;
+  
+  @media screen and (min-width: 425px){
+    padding: 48px 20px;
+  }
+  @media screen and (min-width: 768px){
+    padding: 48px;
+  }
+  
+  &__title{
+    @include sectionTitle;
+  }
+  
+  &__form{
+    padding: 10px;
+    border-radius: 10px;
+    background-color: $sombraClara;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+    
+    &--message{
+      border: none;
+      resize: none;
+      height: 200px;
+      @include input;
+    }
+    
+    [type="submit"]{
+      margin-top: 10px;
+    }
+    
+    @media screen and (min-width: 425px){
+      padding: 20px;
+    }
+    @media screen and (min-width: 768px){
+      padding: 40px;
+    }
+  }
+}

@@ -1,4 +1,5 @@
 import React from 'react';
+import Contact from '../components/Contact';
 import Counter from '../components/Counter'
 import Plans from '../components/Plans';
 import Portfolio from '../components/Portfolio';
@@ -12,10 +13,11 @@ const Home = () => {
     <main>
       <Header/>
       <Services/>
-      <Portfolio/>
       <Us/>
+      <Portfolio/>
       <Plans/>
       <Counter/>
+      <Contact/>  
       <Footer/>
     </main>
   )

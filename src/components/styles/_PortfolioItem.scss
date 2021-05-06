@@ -9,9 +9,24 @@ $itemHeight: 170px;
   
   &__cover{
     transition: .3s;
-    z-index: 2;
+    z-index: 3;
     max-height: $itemHeight;
-    @include imageCover;
+    cursor: pointer;
+    background-color: rgba($color: $secondary-dark-color, $alpha: .9);
+    @include strech;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    &--image{
+      z-index: 3;
+      @include imageCover;
+    }  
+    &--icon{
+      z-index: 2;
+      fill: $PrimarioAzulClaro;
+      width: 30px;
+    }  
   }  
   &__container{
     transition: .3s;
@@ -39,7 +54,7 @@ $itemHeight: 170px;
   
   //Cuando está abierto se le sube el z-index al item
   &.open{
-    z-index: 3;
+    z-index: 4;
   }  
   &.open &__cover{
     transform: translateY(-50%);

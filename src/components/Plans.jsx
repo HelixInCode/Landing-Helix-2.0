@@ -5,7 +5,6 @@ import initialState from '../initialState';
 
 const Plans = () => {
   const [plans] = useState(initialState.plans)
-  console.log(plans)
   return (
     <section id="planes" className="Plans">
       <Title 

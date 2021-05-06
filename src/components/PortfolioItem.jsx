@@ -1,4 +1,5 @@
 import React from 'react'
+import Picture from './icons/Picture'
 
 const PortfolioItem = ({cover, link, description, setSelected, selected, id}) => {
   
@@ -10,7 +11,10 @@ const PortfolioItem = ({cover, link, description, setSelected, selected, id}) =>
       onClick={(id !== selected)? openItem : closeItem} 
       className={`PortfolioItem ${(id === selected)? 'open' : ''}`}
     >
-      <img className="PortfolioItem__cover" src={cover} alt="helix portafolio CIT"/>
+      <div className="PortfolioItem__cover">
+        <img className="PortfolioItem__cover--image" src={cover} alt="helix portafolio CIT"/>
+        <Picture className="PortfolioItem__cover--icon"/>
+      </div>
       <div className="PortfolioItem__container">
         <p className="PortfolioItem__container--description">
           {description}
