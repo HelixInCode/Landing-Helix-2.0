@@ -1,6 +1,7 @@
 .Contact{
+  z-index: 2;
+  position: relative;
   padding: 48px 10px;
-  background-color: $grey-color;
   display: grid;
   justify-content: center;
   grid-template-columns: minmax(200px, 992px);

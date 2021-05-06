@@ -1,12 +1,13 @@
 import React from 'react';
 import Contact from '../components/Contact';
 import Counter from '../components/Counter'
+import ParticlesBackground from '../components/ParticlesBackground';
 import Plans from '../components/Plans';
 import Portfolio from '../components/Portfolio';
-import Services from '../components/Services'
-import Us from '../components/Us'
-import Footer from '../widgets/Footer'
-import Header from '../widgets/Header'
+import Services from '../components/Services';
+import Us from '../components/Us';
+import Footer from '../widgets/Footer';
+import Header from '../widgets/Header';
 
 const Home = () => {
   return (
@@ -17,7 +18,8 @@ const Home = () => {
       <Portfolio/>
       <Plans/>
       <Counter/>
-      <Contact/>  
+      <Contact/>
+      <ParticlesBackground/>
       <Footer/>
     </main>
   )
